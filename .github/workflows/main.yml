@@ -24,6 +24,7 @@ jobs:
           channel: 'stable'
           architecture: x64
 
+      - run: flutter pub add firebase_auth
       - run: flutter build apk --release --split-per-abi
       
       - name: Push to Releases
